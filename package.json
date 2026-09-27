@@ -1,0 +1,9 @@
+{
+  "name": "campus-hub",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Student scheduling and deadline planner with conflict detection.",
+  "main": "src/index.js",
+  "scripts": { "test": "node --test" },
+  "engines": { "node": ">=20" }
+}
