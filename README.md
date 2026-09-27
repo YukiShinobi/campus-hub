@@ -1,21 +1,52 @@
-# Campus Hub
+<div align="center">
 
-A student planning engine for timetables, deadlines and the gaps between them.
+<img src="https://capsule-render.vercel.app/api?type=waving&height=200&text=CAMPUS%20HUB&fontAlignY=38&desc=TIMETABLES%20%E2%80%A2%20DEADLINES%20%E2%80%A2%20FREE%20WINDOWS&descAlignY=58&color=0:050505,55:202020,100:5a1616&fontColor=f5f5f5&descColor=d4d4d4" width="100%" />
 
-I study Computer Science and end up juggling classes, work shifts, applications and project deadlines, so this repo focuses on the scheduling logic behind a student dashboard rather than pretending another generic calendar is enough.
+![Student](https://img.shields.io/badge/focus-student%20planning-111111?style=for-the-badge)
+![Node](https://img.shields.io/badge/Node.js-20%2B-2b2b2b?style=for-the-badge&logo=nodedotjs)
+![Tests](https://img.shields.io/badge/tests-node:test-7a1f1f?style=for-the-badge)
+
+**A planning engine for the parts of student life that collide with each other.**
+
+</div>
+
+---
 
 ## Current features
 
 - timetable sorting
-- class/event overlap detection
-- next-up agenda
-- deadline risk scoring based on time left + progress
+- event overlap detection
+- next-up agenda logic
+- deadline risk scoring using time left + progress
 - free-window calculation for study/work blocks
+- automated tests
+
+## Why I built it
+
+I study Computer Science while juggling classes, work, applications and projects. I wanted the scheduling logic behind a student dashboard instead of another calendar that only displays events without helping me reason about them.
+
+```txt
+classes + shifts + deadlines
+            ↓
+   conflict / gap analysis
+            ↓
+next event + free windows
+            ↓
+      priority decisions
+```
+
+## Use
 
 ```js
 import { findConflicts, freeWindows } from './src/index.js';
 ```
 
-The code is deliberately UI-independent. A future front end can add timetable cards, assignment boards, calendar imports and notifications without changing the scheduling rules.
+```bash
+npm test
+```
 
-Requires Node 20+.
+The code is deliberately UI-independent. A future interface can add timetable cards, calendar imports, assignment boards and notifications without changing the planning rules.
+
+---
+
+<div align="center"><sub>YukiShinobi // a timetable should help make decisions, not just show boxes.</sub></div>
