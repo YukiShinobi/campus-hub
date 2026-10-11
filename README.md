@@ -50,3 +50,10 @@ The code is deliberately UI-independent. A future interface can add timetable ca
 ---
 
 <div align="center"><sub>YukiShinobi // a timetable should help make decisions, not just show boxes.</sub></div>
+
+
+## Scope and maintenance — October 2026
+
+A university planning prototype, not an official university timetable or assessment system. Confirm schedules and deadlines against your institution's authoritative source.
+
+This repository is separate from the current featured products: [Project Creation](https://github.com/YukiShinobi/project-creation), [Veyra](https://github.com/YukiShinobi/YukiShinobi-veyra), and [Simply Management](https://github.com/YukiShinobi/SIMPLYMANAGEMENT-WEBSITE). Its README does not constitute verification of a live production deployment.
